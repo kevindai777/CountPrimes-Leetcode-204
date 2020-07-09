@@ -6,6 +6,8 @@ let n = 10
 //O(nlognlogn) solution that uses the Sieve of Eratosthenes
 
 let primes = new Array(n).fill(true)
+primes[0] = false
+primes[1] = false
 
 for (let i = 2; i * i < n; i++) {
     if (primes[i]) {
